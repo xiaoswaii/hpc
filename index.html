@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css" type="text/css">
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
@@ -12,7 +13,7 @@
     <title>HPC Website</title>
 </head>
 <body data-spy="scroll" data-offset="70">
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-5">
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark mb-5">
         <a class="navbar-brand" href="#">
                 <img src="http://course.cc.ntu.edu.tw/201907/include/img/logo.png" width="30" height="30" class="d-inline-block align-top" alt="">
             NTU-IBM Q System 2019使用大會
@@ -36,79 +37,85 @@
         </div>
       </nav>
 
-    <div class="my-5 " id="intro">
+    <div class="my-5 py-3" id="intro">
       <h1 class="text-center">簡介</h1>
       <p class="m-5 p-5">量子電腦為下一世代最重要的科技之一，美國、歐盟、中國與日本等國無不一投入相當資源投入量子電腦的研發。2019年1月臺灣大學與IBM公司簽訂合作契約，讓臺灣成為少數參與IBM Q計畫的成員之一。臺灣大學-IBM量子電腦中心預定每年召開一次使用者大會，讓各學術研究單位之使用者能夠交換彼此的使用經驗，而在不久的未來更希望讓使用者有各發表研究內容的平台。
-              [臺灣大學-IBM量子電腦中心]將於2019年9月17日召開第一屆使用者大會，特別邀請台灣塑膠公司高英聰高級顧問與Horizon Quantum Computing (新加坡新創公司) Dr. Si-Hui Tan擔任邀請演講者，分享量子電腦未來的展望，同時安排時間讓使用者能對這半年以來的使用經驗及研究內容進行案例分享，歡迎各位使用者踴躍參加！</p>
+              [臺灣大學-IBM量子電腦中心]將於2019年9月17日召開第一屆使用者大會，特別邀請台灣塑膠公司高英聰高級顧問與Horizon Quantum Computing (新加坡新創公司) Dr. Si-Hui Tan擔任邀請演講者，分享量子電腦未來的展望，同時安排時間讓使用者能對這半年以來的使用經驗及研究內容進行案例分享，歡迎各位使用者踴躍參加！
+        </p>
+
     </div>
 
-    <div class="my-5  p-4 bg-light" id="timetable">
-        <h1 class="text-center">時間表</h1>
-        <div class="m-5">
-            <table class="table-striped table table-bordered table-condensed table-responsive-sm">
-                <tbody>
-                    <tr>
-                        <th scope="col" style="text-align: center">時間</th>
-                        <th scope="col" style="text-align: center">活動</th>
-                    </tr>
-                    <tr>
-                        <td class="w-25">9:30 - 10:30 AM</td>
-                        <td>
-                        Why Traditional Industries Welcome Quantum Computing
-                        <br>
-                        高英聰 高級顧問 Mr. Eric Kao (Formosa Plastics Corpration)
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>10:30 - 10:45 AM</td>
-                        <td>Coffee/Tea Break </td>
-                    </tr>
-                    <tr>
-                        <td>10:45 - 11:45 AM</td>
-                        <td>
-                        The Changing Landscape of Quantum Computing
-                        <br>
-                        Dr. Si-Hui Tan ( Horizon Quantum Computing)
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>1:10 - 2:10 PM</td>
-                        <td>
-                        Hybrid Classical-quantum Linear Solver Using NISQ Machine
-                        <br>
-                        陳至㻧 博士 Dr. Chih-Chieh Chen (Industrial Technology Research Institute) 
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>2:10 - 3:10 PM</td>
-                        <td>
-                        Test of the Non-macrorealistic Cat-states in the Cloud
-                        <br>
-                        古煥宇 博士 Dr. Huan-Yu Ku (National Cheng Kung University)
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>3:25 - 4:40 PM</td>
-                        <td>Share & Discussion
-                        <br>
-                        3:25-3:50蔡沛愷 同學 Pei-Kai Tsai, Bachelor student (National Taiwan University)
-                        <br>
-                        3:50-4:15馬金溝 博士 Dr. Gin-Kou Ma (Industrial Technology Research Institute)
-                        <br> 
-                        4:15-4:40張鶴騰 同學 He-Teng Zhang, PhD student (National Taiwan University) 
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
- 
-    </div>
-
-
-    <div class="my-1 py-5" id="info">
+    <div class="my-5 py-3" id="info">
             <h1 class="text-center">會議資訊</h1>
             <p class="text-center m-4">時間: 2019年9月17日(二) 9:00~17:00 </p>
             <p class="text-center">地點: 臺灣大學計算機及資訊網路中心106 階梯教室 </p>
+            <div class="row">
+                <div class="col text-center">
+                  <a class="btn btn-secondary" data-toggle="button" href="">立即報名</a>
+                </div>
+            </div>
+    </div>
+
+    <div class="my-5 py-3" id="timetable">
+            <h1 class="text-center">時間表</h1>
+            <div class="m-5">
+                <table class="table-striped table table-bordered table-condensed table-responsive-sm">
+                    <tbody>
+                        <tr>
+                            <th scope="col" style="text-align: center">時間</th>
+                            <th scope="col" style="text-align: center">活動</th>
+                        </tr>
+                        <tr>
+                            <td class="w-25">9:30 - 10:30 AM</td>
+                            <td>
+                            Why Traditional Industries Welcome Quantum Computing
+                            <br>
+                            高英聰 高級顧問 Mr. Eric Kao (Formosa Plastics Corpration)
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>10:30 - 10:45 AM</td>
+                            <td>Coffee/Tea Break </td>
+                        </tr>
+                        <tr>
+                            <td>10:45 - 11:45 AM</td>
+                            <td>
+                            The Changing Landscape of Quantum Computing
+                            <br>
+                            Dr. Si-Hui Tan ( Horizon Quantum Computing)
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>1:10 - 2:10 PM</td>
+                            <td>
+                            Hybrid Classical-quantum Linear Solver Using NISQ Machine
+                            <br>
+                            陳至㻧 博士 Dr. Chih-Chieh Chen (Industrial Technology Research Institute) 
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>2:10 - 3:10 PM</td>
+                            <td>
+                            Test of the Non-macrorealistic Cat-states in the Cloud
+                            <br>
+                            古煥宇 博士 Dr. Huan-Yu Ku (National Cheng Kung University)
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>3:25 - 4:40 PM</td>
+                            <td>Share & Discussion
+                            <br>
+                            3:25-3:50蔡沛愷 同學 Pei-Kai Tsai, Bachelor student (National Taiwan University)
+                            <br>
+                            3:50-4:15馬金溝 博士 Dr. Gin-Kou Ma (Industrial Technology Research Institute)
+                            <br> 
+                            4:15-4:40張鶴騰 同學 He-Teng Zhang, PhD student (National Taiwan University) 
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+     
     </div>
 
     <footer class="page-footer footer-dark font-small special-color-dark pt-4 bg-dark">
