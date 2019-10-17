@@ -20,18 +20,21 @@
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
-          </button>
+        </button>
       
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ml-auto navbar-right">
             <li class="nav-item active">
-              <a class="nav-link" href="#intro" id="introx">簡介<span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="#intro" id="introx">簡介</a>
             </li>
             <li class="nav-item active">
-                    <a class="nav-link" href="#timetable" id="timetablex">時間表<span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="#info" id="infox">會議資訊</a>
             </li>
             <li class="nav-item active">
-                <a class="nav-link" href="#info" id="infox">會議資訊<span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="#timetable" id="timetablex">時間表</a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="#contact" id="contactx">聯絡資訊</a>
             </li>
           </ul>
         </div>
@@ -44,12 +47,12 @@
         </p>
     </div>
 
-    <div class="my-5 py-3" id="info">
+    <div class="my-5 py-3 bg-light" id="info">
             <h1 class="text-center">會議資訊</h1>
             <p class="text-center m-4">時間: 2019年9月17日(二) 9:00~17:00 </p>
             <p class="text-center">地點: 臺灣大學計算機及資訊網路中心106 階梯教室 </p>
             <div class="col text-center">
-                <a class="btn btn-secondary" data-toggle="button" href="">立即報名</a>
+                <a href="https://my.ntu.edu.tw/actregister/Default.aspx" class="btn btn-secondary" role="button" data-toggle="button" target="_blank">立即報名</a>
             </div>
     </div>
 
@@ -115,9 +118,42 @@
      
     </div>
 
-    <footer class="page-footer footer-dark font-small special-color-dark pt-4 bg-dark">
-        <div class="footer-copyright text-center text-white py-1">主辦單位：臺灣大學-IBM量子電腦中心 </div>
-        <div class="footer-copyright text-center text-white py-1">指導單位：科技部工程技術研究發展司</div>
+    <div class="mt-5 py-3 bg-light" id="contact">
+        <h1 class="text-center mb-5">單位與聯絡資訊</h1>
+        <div class="row location">
+                <div class="col-xs-12 col-lg-4 text-center">
+                    <h4 class="text-center">主辦單位</h4>
+                    <p><a href="http://www.ntu.edu.tw/" target="_blank">國立臺灣大學</a></p>
+                    <h4 class="text-center">承辦單位</h4>
+                    <a href="http://www.cc.ntu.edu.tw/" target="_blank">國立臺灣大學計算機及資訊網路中心 (臺大計中)</a><br>
+                    <a href="http://quantum.ntu.edu.tw/">臺灣大學-IBM量子電腦中心</a><br>
+                    <a>國立臺灣大學高效能與科學計算技術研究中心</a>
+                </div>
+                <div class="col-xs-12 col-lg-4 text-center">
+                    <h4 class="text-center">協辦單位</h4>
+                    <ul>
+                        <li><a href="http://www.ch.ntu.edu.tw/" target="_blank">國立臺灣大學化學系</a></li>
+                        <li><a href="http://www.mse.ntu.edu.tw/index.php?lang=tw">國立臺灣大學材料系</a></li>
+                        <li><a href="https://web.ee.ntu.edu.tw/">國立臺灣大學電機系</a></li>
+                        <li><a href="https://www.phys.ntu.edu.tw/">國立臺灣大學物理系</a></li>
+                        <li><a href="http://www.terasoft.com.tw/" target="_blank">鈦思科技股份有限公司</a></li>
+                        <li><a href="http://www.gpu123.com/">兌全有限公司</a></li>
+                    </ul>
+                </div>
+                <div class="col-xs-12 col-lg-4 text-center">
+                    <h4 class="text-center">聯絡資訊</h4>
+                    <ul>
+                        <li>洽詢：臺大計中/ 諮詢專線</li>
+                        <li>TEL：02-33665022</li>
+                        <li>E-mail：<a href="mailto:cchelp@ntu.edu.tw">cchelp@ntu.edu.tw</a></li>
+                        <li><a href="http://grid.ntu.edu.tw/">高效能運算服務</a></li>
+                    </ul>
+                </div>
+        </div>
+        </div>
+
+    <footer class="page-footer footer-dark font-small special-color-dark py-4 bg-dark">
+        <div class="footer-copyright text-center text-white py-1">© 2019 National Taiwan University 國立臺灣大學計算機及資訊網路中心. All Rights Reserved.</div>
     </footer>
     <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
     <script src="index.js"></script>
