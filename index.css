@@ -34,6 +34,10 @@ ul {
     padding: 15px;
     border-radius: 4px;
 }
+
+#navtitle {
+    line-height: 2;
+}
   
 #myBtn:hover {
   background-color: #555;
