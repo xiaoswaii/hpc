@@ -8,6 +8,11 @@ ul {
     padding-inline-start: 0;
 }
 
+li:hover {
+    background: #343a40;
+    color: white;
+}
+
 .row {
     width: 100%;
     margin-left: 0;
