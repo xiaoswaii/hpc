@@ -39,6 +39,7 @@ $(document).ready(function() {
             });
         } // End if
     });
+    removeClass();
 });
 
 function initMap() {
@@ -76,6 +77,29 @@ function topFunction() {
 var body = $("html, body");
   body.stop().animate({scrollTop:0}, 500, 'swing', function() { 
  });
+}
+
+function removeClass() {
+    console.log(window.innerWidth)
+    if(window.innerWidth < '767'){
+        document.querySelector('#outline-div-1').classList.remove("px-5");
+        document.querySelector('#outline-div-2').classList.remove("mx-5");
+        document.querySelector('#outline-1').classList.remove("px-5");
+        document.querySelector('#outline-1').classList.remove("mx-5");
+        document.querySelector('#outline-2').classList.remove("px-5");
+        document.querySelector('#outline-2').classList.remove("mx-5");
+        document.querySelector('#tt').classList.remove("mx-5");
+        document.querySelector('#tt').classList.remove("px-5");
+        document.querySelector('#timetable').classList.remove("px-5");
+        document.querySelector('#workshop').classList.remove("px-5");
+        document.querySelector('#workshop').classList.remove("mx-5");
+        document.querySelector('#outline').classList.remove("px-5");
+        for(var i=1;i<6;i++){
+            document.querySelector(`#workshop-content-${i}`).classList.remove(`mx-5`);
+            document.querySelector(`#workshop-content-${i}`).classList.remove(`px-5`);
+        }
+        
+    }
 }
 
 

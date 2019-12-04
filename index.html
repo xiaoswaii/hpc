@@ -50,9 +50,9 @@
         </div>
       </nav>
 
-    <div class="py-5 content" id="info">
-        <h1 class="text-center mb-3">課程資訊</h1>
-        <p class="text-center m-4">時間: 2019年12月19日(四) 08:30~17:00</p>
+    <div class="py-5 content " id="info">
+        <h1 class="text-center mb-3 "><span class="bg-black text-white py-2 px-5">課程資訊</span></h1>
+        <p class="text-center">時間: 2019年12月19日(四) 08:30~17:00</p>
         <p class="text-center">地點: 臺灣大學計算機及資訊網路中心206電腦教室</p>
         <p class="text-center">身份：限學生，台大學生優先。</p>
         <p class="text-center">費用：免費</p>
@@ -62,8 +62,8 @@
     </div>
 
     <div class="py-5 px-5 content bg-light" id="timetable">
-        <h1 class="text-center">時間表</h1>
-        <div class="m-5 px-5">
+        <h1 class="text-center"><span class="bg-success text-white py-2 px-5">時間表</span></h1>
+        <div class="mx-5 my-5 px-5" id="tt">
             <table class="table-striped table table-bordered table-condensed table-responsive-sm">
                 <tbody>
                     <tr>
@@ -122,20 +122,20 @@
     </div>
 
     <div class="py-5 content" id="detail">
-      <h1 class="text-center mb-3">Fundamentals of Deep Learning for Natural Language Processing</h1>
+      <h1 class="text-center mb-3"><span class="bg-black text-white py-2 px-5">Fundamentals of Deep Learning for Natural Language Processing</span></h1>
       <p class="p-5 mx-5">This workshop teaches deep learning techniques for understanding textual input using natural language processing (NLP) through a series of hands-on exercises. You’ll learn techniques to train a neural network for text classification, build a linguistic style model to extract features from a given text document, and create a neural machine translation model for converting text from one language to another.</p>
       <h3 class="text-center mb-3">Learning Objectives</h3>
       <h5 class="text-center my-3 text-success">At the conclusion of the workshop, you’ll have an understanding of:</h5>
-      <div class="px-5 mx-5 content" id="info">
-        <ul class="px-5 mx-5 list-group">
+      <div class="px-5 mx-5 content" id="outline-div-1">
+        <ul class="px-5 mx-5 list-group" id="outline-1">
           <li class="list-group-item">Classical approaches to convert text to a machine-understandable representation</li>
           <li class="list-group-item">Implementation and properties of distributed representations (embeddings)</li>
           <li class="list-group-item">Methods to train machine translators from one language to another</li>
         </ul>
       </div>
       <h5 class="text-center my-3  text-success">Why Deep Learning Institute Hands-On Training?</h5>
-      <div class="px-5 mx-5 content" id="info">
-        <ul class="px-5 mx-5 list-group">
+      <div class="px-5 mx-5 content" id="outline-div-2">
+        <ul class="px-5 mx-5 list-group" id="outline-2">
           <li class="list-group-item">Learn to build deep learning and accelerated computing applications for industries such as autonomous vehicles, finance, game development, healthcare, robotics, and more. </li>
           <li class="list-group-item">Obtain hands-on experience with the most widely used, industry-standard software, tools, and frameworks.</li>
           <li class="list-group-item">Gain real-world expertise through content designed in collaboration with industry leaders such as the Children’s Hospital of Los Angeles, Mayo Clinic, and PwC.</li>
@@ -146,8 +146,8 @@
     </div>
 
     <div class="py-5 px-5 content bg-light" id="outline">
-      <h1 class="text-center">Workshop Online</h1>
-      <div class="m-5 px-5">
+      <h1 class="text-center"><span class="bg-success text-white py-2 px-5">Workshop Outline</span></h1>
+      <div class="mx-5 my-5 px-5" id="workshop">
         <table class="table-striped table table-bordered table-condensed table-responsive-sm">
             <tbody>
                 <tr>
@@ -157,7 +157,7 @@
                 <tr>
                   <td class="w-25"><strong>Introduction</strong><br>(15 mins)</td>
                   <td>
-                    <ul class="px-5 mx-5 list-group">
+                    <ul class="px-5 mx-5 list-group" id="workshop-content-1">
                       <li class="list-group-item">Meet the instructor.</li>
                       <li class="list-group-item">Create an account at courses.nvidia.com/join</li>
                       <li class="list-group-item">Explore the importance of data representation for computers to understand language,aswell as NLP challenges and how to tackle them with deep learning.</li>
@@ -167,7 +167,7 @@
                 <tr>
                   <td><strong>Word Embeddings</strong><br>(120 mins)</td>
                   <td>
-                    <ul class="px-5 mx-5 list-group">
+                    <ul class="px-5 mx-5 list-group" id="workshop-content-2">
                       <li class="list-group-item">Learn about distributed data representations, such as word embeddings, using the Word2Vec algorithm. Once trained, word embeddings can be used for text classification.</li>
                     </ul>
                   </td>
@@ -179,7 +179,7 @@
                 <tr>
                   <td><strong>Text Classification</strong><br>(120 mins)</td>
                   <td>
-                    <ul class="px-5 mx-5 list-group">
+                    <ul class="px-5 mx-5 list-group" id="workshop-content-3">
                       <li class="list-group-item">Build a linguistic style model to extract features from a given set of texts usinembeddings.</li>
                       <li class="list-group-item">Use text classification to determine the authors of an unknown set  of documents.</li>
                     </ul>
@@ -192,7 +192,7 @@
                 <tr>
                   <td><strong>Text Translation</strong><br>(120 mins)</td>
                   <td>
-                    <ul class="px-5 mx-5 list-group">
+                    <ul class="px-5 mx-5 list-group" id="workshop-content-4">
                       <li class="list-group-item">Create a neural machine translation model to convert text from one language tanother.</li>
                       <li class="list-group-item">Learn the basic technique to translate human-readable text to machine-readablformat.</li>
                       <li class="list-group-item">Use attention mechanisms to improve results—especially for long strings.</li>
@@ -202,7 +202,7 @@
                 <tr>
                     <td><strong>Final Review</strong><br>(15 mins)</td>
                     <td>
-                      <ul class="px-5 mx-5 list-group">
+                      <ul class="px-5 mx-5 list-group" id="workshop-content-5">
                         <li class="list-group-item">Review key learnings and wrap up questions.</li>
                         <li class="list-group-item">Complete the assessment to earn a certificate.</li>
                         <li class="list-group-item">Take the workshop survey.</li>
@@ -215,7 +215,7 @@
     </div>
 
     <div class="py-5 content" id="teacher">
-      <h1 class="text-center mb-3">專業師資</h1>
+      <h1 class="text-center mb-3"><span class="bg-black text-white py-2 px-5">專業師資</span></h1>
       <p class="text-center m-4">CK Lee 李正匡博士</p>
       <p class="text-center">NVIDIA資深解決方案架構師</p>
       <p class="text-center">NVIDIA AI 技術中心台灣負責窗口</p>
@@ -229,7 +229,7 @@
     </div>
 
     <div class="py-5 content bg-light" id="place">
-        <h1 class="text-center">上課位置</h1>
+        <h1 class="text-center"><span class="bg-success text-white py-2 px-5">上課位置</span></h1>
         <div class="text-right" style="width:80%;margin:0 auto;">
             <a href="https://www.google.com/maps/dir/?api=1&destination=25.0208863,121.5398093">前往路線</a>
         </div>
@@ -258,7 +258,7 @@
     </div>
 
     <div class="py-5 mx-5 content" id="contact">
-        <h1 class="text-center mb-5">單位與聯絡資訊</h1>
+        <h1 class="text-center mb-5"><span class="bg-black text-white py-2 px-5">單位與聯絡資訊</span></h1>
             <div class="row px-5">
                 <div class="col-xs-12 col-lg-4 text-center">
                     <h4 class="text-center">主辦單位</h4>
