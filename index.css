@@ -52,6 +52,10 @@ ul {
   background-color: #555;
 }
 
+.rwd-font {
+    font-size: 1.5rem;
+}
+
 @media screen and (max-width: 767px){
     .dividing-line {
         border-right: none;

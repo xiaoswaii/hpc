@@ -40,6 +40,7 @@ $(document).ready(function() {
         } // End if
     });
     removeClass();
+    addClass();
 });
 
 function initMap() {
@@ -79,7 +80,7 @@ var body = $("html, body");
  });
 }
 
-function removeClass() {
+function removeClass () {
     console.log(window.innerWidth)
     if(window.innerWidth < '767'){
         document.querySelector('#outline-div-1').classList.remove("px-5");
@@ -94,11 +95,29 @@ function removeClass() {
         document.querySelector('#workshop').classList.remove("px-5");
         document.querySelector('#workshop').classList.remove("mx-5");
         document.querySelector('#outline').classList.remove("px-5");
+        document.querySelector('#con').classList.remove("px-5");
+        document.querySelector('#fundContent').classList.remove("mx-5");
+        document.querySelector('#contentDetail').classList.remove("px-5");
+        document.querySelector('#contentDetail').classList.remove("py-2");
+        document.querySelector('#contactSpan').classList.remove("px-5");
+        document.querySelector('#contactSpan').classList.add("px-4");
+        document.querySelector('#div').classList.add("px-5");
         for(var i=1;i<6;i++){
             document.querySelector(`#workshop-content-${i}`).classList.remove(`mx-5`);
             document.querySelector(`#workshop-content-${i}`).classList.remove(`px-5`);
         }
-        
+    }
+}
+
+function addClass () {
+    if(window.innerWidth < '767'){
+        document.querySelector('#infoHeader').classList.add("rwd-font");
+        document.querySelector('#timetableHeader').classList.add("rwd-font");
+        document.querySelector('#fundHeader').classList.add("rwd-font");
+        document.querySelector('#workshopHeader').classList.add("rwd-font");
+        document.querySelector('#teacherHeader').classList.add("rwd-font");
+        document.querySelector('#placeHeader').classList.add("rwd-font");
+        document.querySelector('#contactHeader').classList.add("rwd-font");
     }
 }
 
