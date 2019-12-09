@@ -10,14 +10,14 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <title>NLP自然語言訓練</title>
+    <title>NVIDIA NLP自然語言訓練實作課程</title>
 </head>
 <body data-spy="scroll" data-offset="70">
     <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
     <nav class="navbar navbar-expand-md navbar-dark bg-dark mb-5">
         <a class="navbar-brand" href="#" id="navtitle">
             <img src="http://course.cc.ntu.edu.tw/201907/include/img/logo.png" width="40" height="40" class="d-inline-block align-top" alt="">
-            NLP自然語言訓練
+            NVIDIA NLP自然語言訓練實作課程
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -48,7 +48,11 @@
             </li>
           </ul>
         </div>
-      </nav>
+    </nav>
+
+    <div class="py-5 content">
+        <h1 class="text-center mb-3" id=""><span class="bg-dark text-white py-2 px-5" id="header">NVIDIA NLP自然語言訓練實作課程</span></h1>
+    </div>
 
     <div class="py-5 content " id="info">
         <h1 class="text-center mb-3" id="infoHeader"><span class="bg-black text-white py-2 px-5">課程資訊</span></h1>
@@ -57,7 +61,7 @@
         <p class="text-center">身份：限學生，台大學生優先。</p>
         <p class="text-center">費用：免費</p>
         <div class="col text-center">
-            <a href="https://my.ntu.edu.tw/actregister/Default.aspx" class="btn btn-secondary" role="button" target="_blank">立即報名</a>
+            <a href="https://my.ntu.edu.tw/actregister/sessionList.aspx?actID=20192203_01" class="btn btn-secondary" role="button" target="_blank">立即報名</a>
         </div>
     </div>
 
@@ -121,9 +125,15 @@
         </div>
     </div>
 
-    <div class="py-5 content" id="detail">
+    <div class="py-5 px-5 mx-5 content" id="detail">
       <h1 class="text-center mb-3" id="fundHeader"><span class="bg-black text-white py-2 px-5" id="contentDetail">Fundamentals of Deep Learning for Natural Language Processing</span></h1>
       <p class="p-5 mx-5" id="fundContent">This workshop teaches deep learning techniques for understanding textual input using natural language processing (NLP) through a series of hands-on exercises. You’ll learn techniques to train a neural network for text classification, build a linguistic style model to extract features from a given text document, and create a neural machine translation model for converting text from one language to another.</p>
+      <p class="p-5 mx-5">本課程將由NVIDIA原廠講師授課，教授最新的深度學習技術，以瞭解如何使用自然語言處理 (NLP) 進行文本結構資料型式的處理。並包含實作練習，其中你將學會:
+        將文字轉換成機器能夠理解的表現形式與其經典做法
+        實作分散式表示法 (內嵌) 並瞭解其性質與好處
+        訓練機器翻譯，從一個語言譯為另一個語言
+        完成後，你將專精使用 NLP，並能在其他類似用途上應用內嵌技術。
+        學員完成課程內的練習題後，將可獲得由NVIDIA官方認證的電子證書。</p>
       <h3 class="text-center mb-3">Learning Objectives</h3>
       <h5 class="text-center my-3 text-success">At the conclusion of the workshop, you’ll have an understanding of:</h5>
       <div class="px-5 mx-5 content" id="outline-div-1">
@@ -214,15 +224,17 @@
       </div>
     </div>
 
-    <div class="py-5 content" id="teacher">
+    <div class="py-5 px-5 mx-5 content" id="teacher">
       <h1 class="text-center mb-3" id="teacherHeader"><span class="bg-black text-white py-2 px-5">專業師資</span></h1>
       <p class="text-center m-4">CK Lee 李正匡博士</p>
       <p class="text-center">NVIDIA資深解決方案架構師</p>
       <p class="text-center">NVIDIA AI 技術中心台灣負責窗口</p>
       <p class="text-center">講師介紹:</p>
-      <p class="mx-5">國立台灣大學光電工程博士畢業
+      <p class="mx-5 px-5" id="teacherContent">國立台灣大學光電工程博士畢業
+        <br>
         <br>
         在學術界時期，過去研究領域包含使用C ++進行光子在生物組織中傳遞的蒙地卡羅模擬，以及使用Labview和C進行光學同調斷層掃描/顯微術（OCT / OCM）的系統開發。在半導體業界時期，負責各種圖像處理演算法開發，包含使用matlab和python應用機器學習領域各種技術，如隨機森林和卷積神經網絡等。目前擔任NVIDIA AI技術中心的資深解決方案架構師，負責組織業界和學術界之間的合作技術開發。
+        <br>
         <br>
         在加入NVIDIA之前，曾任長庚大學電機系助理教授、及TSMC良率精進部主任工程師等職。
         </p>
@@ -264,7 +276,7 @@
                     <h4 class="text-center">主辦單位</h4>
                     <p><a href="http://www.ntu.edu.tw/" target="_blank">國立臺灣大學</a></p>
                     <h4 class="text-center">承辦單位</h4>
-                    <a href="http://www.cc.ntu.edu.tw/" target="_blank">國立臺灣大學計算機及資訊網路中心 (臺大計中)</a><br>
+                    <p><a href="http://www.cc.ntu.edu.tw/" target="_blank">國立臺灣大學計算機及資訊網路中心 (臺大計中)</a></p>
                 </div>
                 <div class="col-xs-12 col-lg-4 text-center">
                     <h4 class="text-center">協辦單位</h4>
