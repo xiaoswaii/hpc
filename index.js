@@ -97,6 +97,7 @@ function removeClass () {
         document.querySelector('#outline').classList.remove("px-5");
         document.querySelector('#con').classList.remove("px-5");
         document.querySelector('#fundContent').classList.remove("mx-5");
+        document.querySelector('#fundContentCn').classList.remove("mx-5");
         document.querySelector('#detail').classList.remove("px-5");
         document.querySelector('#detail').classList.remove("mx-5");
         document.querySelector('#teacher').classList.remove("px-5");
@@ -108,12 +109,17 @@ function removeClass () {
         document.querySelector('#contactSpan').classList.remove("px-5");
         document.querySelector('#contactSpan').classList.add("px-4");
         document.querySelector('#header').classList.remove("px-5");
-        document.querySelector('#header').classList.add("px-4");
+        document.querySelector('#header').classList.add("px-2");
         document.querySelector('#div').classList.add("px-5");
         for(var i=1;i<6;i++){
             document.querySelector(`#workshop-content-${i}`).classList.remove(`mx-5`);
             document.querySelector(`#workshop-content-${i}`).classList.remove(`px-5`);
         }
+    }
+
+    if(window.innerWidth < '600'){
+        document.querySelector('#navtitle').classList.add('small-title');
+        document.querySelector('#header').classList.add('small-font');
     }
 }
 
